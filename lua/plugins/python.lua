@@ -4,11 +4,7 @@ return {
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
-      -- vim.list_extend(opts.ensure_installed, { "pyright", "black", "ruff-lsp", "ruff" })
-      vim.list_extend(opts.ensure_installed, {
-        "black",
-        "ruff",
-      })
+      vim.list_extend(opts.ensure_installed, { "pyright", "black", "ruff-lsp", "ruff" })
     end,
   },
 
@@ -76,7 +72,7 @@ return {
       },
       setup = {
         ruff_lsp = function()
-          require("lazyvim.util").on_attach(function(client, _)
+          require("lazyvim.util").lsp.on_attach(function(client, _)
             if client.name == "ruff_lsp" then
               -- Disable hover in favor of Pyright
               client.server_capabilities.hoverProvider = false
@@ -84,7 +80,7 @@ return {
           end)
         end,
         pyright = function()
-          require("lazyvim.util").on_attach(function(client, _)
+          require("lazyvim.util").lsp.on_attach(function(client, _)
             if client.name == "pyright" then
               -- disable hover in favor of jedi-language-server
               client.server_capabilities.hoverProvider = false
@@ -97,17 +93,13 @@ return {
 
   -- Setup null-ls with `black`
   {
-    "jose-elias-alvarez/null-ls.nvim",
+    "nvimtools/none-ls.nvim",
     opts = function(_, opts)
       local nls = require("null-ls")
       opts.sources = vim.list_extend(opts.sources, {
         -- Order of formatters matters. They are used in order of appearance.
         nls.builtins.formatting.ruff,
         nls.builtins.formatting.black,
-        -- nls.builtins.formatting.black.with({
-        --   extra_args = { "--preview" },
-        -- }),
-        -- nls.builtins.diagnostics.ruff,
       })
     end,
   },

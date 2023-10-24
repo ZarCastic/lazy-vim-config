@@ -23,3 +23,5 @@ map("i", "<A-k>", "<esc>gk", { desc = "Move up" })
 map("i", "<A-j>", "<esc>gj", { desc = "Move down" })
 map("v", "<A-k>", "<esc>gk", { desc = "Move up" })
 map("v", "<A-j>", "<esc>gj", { desc = "Move down" })
+
+map("n", "<leader>xr", "<cmd>Trouble lsp_references<cr>", { desc = "Trouble references" })
