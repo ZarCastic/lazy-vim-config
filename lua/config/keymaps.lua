@@ -24,4 +24,5 @@ map("i", "<A-j>", "<esc>gj", { desc = "Move down" })
 map("v", "<A-k>", "<esc>gk", { desc = "Move up" })
 map("v", "<A-j>", "<esc>gj", { desc = "Move down" })
 
-map("n", "<leader>xr", "<cmd>Trouble lsp_references<cr>", { desc = "Trouble references" })
+map("n", "<leader>xr", "<esc>:Trouble lsp_references<cr>", { desc = "Trouble references" })
+map("n", "<leader>ub", "<esc>:Twilight<cr>", { desc = "Toggle Twilight" })
