@@ -32,15 +32,15 @@ return {
   -- a whole.
 
   -- Add which-key namespace for Python debugging
-  {
-    "folke/which-key.nvim",
-    optional = true,
-    opts = {
-      defaults = {
-        ["<leader>dP"] = { name = "+Python" },
-      },
-    },
-  },
+  -- {
+  --   "folke/which-key.nvim",
+  --   optional = true,
+  --   opts = {
+  --     defaults = {
+  --       ["<leader>dP"] = { name = "+Python" },
+  --     },
+  --   },
+  -- },
 
   -- Setup `neotest`
   {
