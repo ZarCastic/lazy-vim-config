@@ -31,7 +31,7 @@ return {
   -- that are are set up (via dap) but not yet installed. Might as well skip the lines below as
   -- a whole.
 
-  -- Add which-key namespace for Python debugging
+  -- -- Add which-key namespace for Python debugging
   -- {
   --   "folke/which-key.nvim",
   --   optional = true,
