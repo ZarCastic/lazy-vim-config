@@ -4,6 +4,8 @@
     "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.clangd",
+    "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.project"
