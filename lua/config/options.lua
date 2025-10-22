@@ -4,7 +4,3 @@
 
 vim.o.exrc = true
 vim.o.scrolloff = 25
-
-if os.getenv("WAYLAND_DISPLAY") then
-  vim.g.clipboard = "osc52"
-end
