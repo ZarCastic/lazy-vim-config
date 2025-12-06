@@ -4,3 +4,4 @@
 
 vim.o.exrc = true
 vim.o.scrolloff = 25
+vim.o.sidescroll = 0
